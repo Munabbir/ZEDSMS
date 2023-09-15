@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEDSMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-white">
+    <!-- header navbar -->
+    <header>
+        <section class="container mx-auto">
+            <nav class="bg-white px-4 py-3 shadow ">
+                <!-- Desktop Navbar -->
+                <div class="hidden md:flex justify-around items-center">
+                    <a href="#" class="text-black text-2xl font-bold flex"><img src="img/Asset 1 1.png" alt=""><span> ZEDSMS</span></a>
+                    <div class="space-x-4 flex items-center">
+                        <a href="#" class="text-black">Our Service</a>
+                        <a href="#" class="text-black">About us</a>
+                        <a href="#" class="text-black">Contact</a>
+                        <div class="space-x-4 px-6 flex justify-center items-center">
+                            <button class=" btn btn-primary">sing in</button>
+                        <button class="border-solid border-2 border-indigo-600 py-3 px-5 rounded-md font-bold text-black">sing UP</button>
+                        <img class="Ellipse36 w-6 h-6 rounded-full" src="img/Ellipse 36.svg" />
+                        <div class=" hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1">
+                              <li tabindex="0">
+                                <details>
+                                  <summary>English</summary>
+                                  <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                  </ul>
+                                </details>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+                <!-- Mobile Navbar (Hamburger Menu) -->
+                <div class="md:hidden flex justify-between items-center">
+                    <a href="#" class="text-black text-2xl font-bold flex"><img src="img/Asset 1 1.png" alt=""><span> ZEDSMS</span></a>
+                    <button id="mobile-menu-button" class="text-white text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    </button>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden  bg-blue-500 p-4">
+                <a href="#" class="block text-white my-2">Home</a>
+                <a href="#" class="block text-white my-2">About</a>
+                <a href="#" class="block text-white my-2">Services</a>
+                <a href="#" class="block text-white my-2">Contact</a>
+                <button class=" btn btn-primary">sing in</button>
+                <button class="border-solid border-2 btn btn-active  mt-3">sing UP</button>
+            </div>
+            <script>
+                // Toggle mobile menu visibility
+                document.getElementById('mobile-menu-button').addEventListener('click', function () {
+                    var mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.toggle('hidden');
+                });
+            </script>
+            
+        </section>
+              <!-- Send & Receive Message Online  -->
+              <section class="container mx-auto bg-white pb-20">
+                <div class="lg:flex justify-around items-center md:px-20 px-10">
+                  <div class="space-y-7">
+                    <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-black">Send & Receive <br> Message Online </h1>
+                    <p class="text-black text-2xl">Powerful, self-serve product easy  to use for <br> easily communicate with our virtual sim cards, <br> sign up us or see the demo</p>
+                  </div>
+                  <div class="md:py-7">
+                    <img src="img/cuate.png" alt="">
+                  </div>
+                </div>
+              </section>
+    </header>
+    <main>
+      <!-- To Get A Number -->
+      <section class="container mx-auto bg-white pb-20">
+        <div class="space-y-2">
+          <div class="text-black text-center">
+            <h3 class="text-3xl font-bold">To Get A Number</h3>
+            <p class="text-1xl">for any kind of services</p>
+        </div>
+        <div class="btn-group flex justify-center items-center ">
+          <button class="btn bg-blue-600 text-white border-blue-600 border-2">Button</button>
+          <button class="btn bg-white text-black hover:bg-blue-600 hover:text-white border-blue-600 border-2">Button</button>
+          <button class="btn bg-white text-black hover:bg-blue-600 hover:text-white border-blue-600 border-2">Button</button>
+        </div>
+        </div>
+        <div class="container mx-auto">
+          <div class="p-7">
+            <div class="border-solid border-2 p-7 rounded-lg">
+              <div class="hidden md:block">
+                <div class="flex justify-center border-b-4 pb-7">
+                  <div class="lg:flex justify-center px-2">
+                    <span class="px-2">Country:</span>
+                    <a class="flex items-center" href="#"><img src="img/Ellipse 3400.png" alt=""><span class="px-2">South Africa</span></a>
+                  </div>
+                  <div class="lg:flex justify-center px-2">
+                    <span class="px-2">Service:</span>
+                    <a class="flex items-center" href="#"><img src="img/Ellipse 3400.png" alt=""><span class="px-2">Instagram</span></a>
+                  </div>
+                  <div class="lg:flex justify-center px-2">
+                    <span class="px-2">Number:</span>
+                    <a class="flex items-center px-1" href="#">+880 12321 2***5232</a>
+                  </div>
+                  <div class="lg:flex justify-center px-2">
+                    <span class="px-2">Rent:</span>
+                    <a class="flex items-center px-1" href="#">1 Week</a>
+                  </div>
+                  <div class="lg:flex justify-center px-2">
+                    <span class="px-2">Cost:</span>
+                    <a class="flex items-center px-1" href="#">$00.00</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-16 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+                <div>
+                  <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Shearch" class="bg-white border-b-2 w-36 md:w-auto outline-none text-black">
+                  </div>
+                  <div class="border-r-2">
+                  <a href="#" class="py-4"><img src="img/Component 22.png" alt=""></a>
+                  <a href="#" class="py-4"><img src="img/Component 21.png" alt=""></a>
+                  <a href="#" class="py-4"><img src="img/Component 23.png" alt=""></a>
+                  <a href="#" class="py-4"><img src="img/Component 24.png" alt=""></a>
+                  <a href="#" class="py-4"><img src="img/Component 25.png" alt=""></a>
+                  <a href="#" class="py-4"><img src="img/Component 26.png" alt=""></a>
+                  <a href="#" class="py-4"><img src="img/Component 27.png" alt=""></a>
+                  <a href="#" class="py-4"><img src="img/Component 28.png" alt=""></a>
+                </div>
+                </div>
+
+                <div class="hidden md:block">
+                  <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Shearch" class="bg-white border-b-2 w-24 md:w-auto outline-none text-black">
+                  </div>
+                  <div class="border-r-2">       
+                    <div class="flex justify-between px-4 py-3">
+                      <a class="flex items-center" href="#"><img src="img/Ellipse 34.png" alt=""><span class="px-2">Apple</span></a>
+                      <span>$0.35</span>
+                    </div>
+                    <div class="flex justify-between px-4 py-3">
+                      <a class="flex items-center" href="#"><img src="img/Ellipse 34 (1).png" alt=""><span class="px-2">Amazon</span></a>
+                      <span>$0.35</span>
+                    </div>
+                    <div class="flex justify-between px-4 py-3">
+                      <a class="flex items-center" href="#"><img src="img/Ellipse 34 (2).png" alt=""><span class="px-2">Amazon</span></a>
+                      <span>$0.35</span>
+                    </div>
+                    <div class="flex justify-between px-4 py-3">
+                      <a class="flex items-center" href="#"><img src="img/Ellipse 34 (3).png" alt=""><span class="px-2">Tesla</span></a>
+                      <span>$0.35</span>
+                    </div>
+                    <div class="flex justify-between px-4 py-3">
+                      <a class="flex items-center" href="#"><img src="img/Ellipse 34 (4).png" alt=""><span class="px-2">Microsoft</span></a>
+                      <span>$0.35</span>
+                    </div>
+                    <div class="flex justify-between px-4 py-3">
+                      <a class="flex items-center" href="#"><img src="img/Ellipse 34 (5).png" alt=""><span class="px-2">Microsoft</span></a>
+                      <span>$0.35</span>
+                    </div>
+                    <div class="flex justify-between px-4 py-3">
+                      <a class="flex items-center" href="#"><img src="img/Ellipse 34 (6).png" alt=""><span class="px-2">Microsoft</span></a>
+                      <span>$0.35</span>
+                    </div>
+                    <div class="flex justify-between px-4 py-3">
+                      <a class="flex items-center" href="#"><img src="img/Ellipse 34 (7).png" alt=""><span class="px-2">Tesla</span></a>
+                      <span>$0.35</span>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="hidden md:block">
+                  <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Shearch" class="bg-white border-b-2 w-24 md:w-auto outline-none text-black">
+                  </div>
+                  <div class="border-r-2">
+                    <div class="py-4">
+                      <a href="">+880 12321 2***5232</a>
+                    </div>
+                    <div class="py-4">
+                      <a href="">+880 12321 2***5232</a>
+                    </div>
+                    <div class="py-4">
+                      <a href="">+880 12321 2***5232</a>
+                    </div>
+                    <div class="py-4">
+                      <a href="">+880 12321 2***5232</a>
+                    </div>
+                    <div class="py-4">
+                      <a href="">+880 12321 2***5232</a>
+                    </div>
+                    <div class="py-4">
+                      <a href="">+880 12321 2***5232</a>
+                    </div>
+                    <div class="py-4">
+                      <a href="">+880 12321 2***5232</a>
+                    </div>
+                    <div class="py-4">
+                      <a href="">+880 12321 2***5232</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Buy virtual sim easier than ever -->
+      <section class="container mx-auto pb-30">
+        <h1 class="text-center text-2xl md:text-4xl text-black">Buy virtual sim easier than ever</h1>
+        
+      </section>
+
+      <!-- Why Choose Us? -->
+      <section class="container mx-auto pt-32 pb-20">
+          <div class="grid sm:grid-cols-2 gap-5 justify-center items-center px-7">
+            <div class=" row-span-4">
+              <img src="img/cuate 2.png" alt="">
+          </div>
+              <div class="rounded-lg flex bg-white p-7 shadow-lg space-x-6">
+                  <div>
+                    <h3 class="text-2xl">Why Choose Us?</h3>
+                    <p>Choose us for unparalleled quality, exceptional service.</p>
+                  </div>
+              </div>
+              <div class="rounded-lg flex bg-white p-7 shadow-lg space-x-6">
+                  <div>
+                      <h3 class="text-2xl">Protect Your Privacy</h3>
+                      <p>Phone number inboxes are workspaces where teams view and collaborate on contact conversations.</p>
+                  </div>
+              </div>
+              <div class="rounded-lg flex bg-white p-7 shadow-lg space-x-6">
+                  <div>
+                      <h3 class="text-2xl">You can see your log and service usage</h3>
+                      <p>Easily track conversations: record calls, transcribe voicemails, view logs all in one place.</p>
+                  </div>
+              </div>
+              <div class="rounded-lg flex bg-white p-7 shadow-lg space-x-6">
+                  <div>
+                      <h3 class="text-2xl">Contact details all in one place</h3>
+                      <p>Keep track of important contact details that matter to your business with custom properties and notes.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- Get a tour of ZEDSMS -->
+
+      <section class="container mx-auto md:flex items-center justify-around bg-white pb-32 pt-20">
+        <div class="space-y-4 sm:px-0 px-5">
+            <h1 class="text-2xl sm:text-5xl  uppercase font-bold text-black">Get a tour of ZEDSMS</h1>
+            <p class="sm:text-xl">Watch the tour you just how easy it is to get <br> your messaging started.</p>
+            <button class="uppercase border-2  px-7 py-5 font-bold flex items-center gap-3 rounded-lg">Watch demo<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+        </div>
+        <div class="sm:px-0 px-5">
+            <img class="w-1/2 md:w-full py-8 md:py-0" src="img/bro.png" alt="">
+        </div>
+
+    </section>
+    <!-- We are available on -->
+    <section class="container mx-auto flex justify-center items-center pb-20">
+      <div class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-24">
+        <div class="space-y-7">
+          <div>
+            <img src="img/Frame 1000002019 (1).png" alt="">
+          </div>
+          <div>
+            <span >Mobile App</span>
+          </div>
+        </div>
+        <div class="space-y-7">
+          <div>
+            <img src="img/Frame 1000002019 (2).png" alt="">
+          </div>
+          <div>
+            <span>Desktop App</span>
+          </div>
+        </div>
+        <div class="space-y-7">
+          <div>
+            <img src="img/Frame 1000002019 (3).png" alt="">
+          </div>
+          <div>
+            <span>Telegram Chat Bot</span>
+          </div>
+        </div>
+        <div class="space-y-7">
+          <div>
+            <img src="img/Frame 1000002019 (4).png" alt="">
+          </div>
+          <div>
+            <span>WhatsApp Chat Bot</span>
+          </div>
+        </div>
+        <div class="space-y-5">
+          <div>
+            <img src="img/Frame 1000002019.png" alt="">
+          </div>
+         <div>
+          <span>Web version</span>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!-- Frequently asked questions -->
+    <section class="container mx-auto pt-14 pb-24 flex justify-center items-center">
+      <div>
+        <div class="space-y-3 text-center pb-32">
+          <h3 class="text-3xl text-black font-bold">Frequently asked questions</h3>
+        <p class="text-sm">Everything you need to know about the product & services</p>
+        </div>
+        <div class="collapse collapse-plus bg-white gap-5 mr-5 sm:mr-52">
+          <input type="radio" name="my-accordion-3" checked="checked" /> 
+          <div class="collapse-title text-xl font-medium border-2">
+            Can I change my plan later?
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-white gap-5 mr-5 sm:mr-52">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium border-2">
+            Can I change my plan later?
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-white gap-5 mr-5 sm:mr-52">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium border-2">
+            What is your cancellation policy?
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-white gap-5 mr-5 sm:mr-52">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium border-2">
+            Can other info be added to an invoice?
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-white gap-5 mr-5 sm:mr-52">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium border-2 ">
+            How does billing work?
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-white gap-5 mr-12 sm:mr-52">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium border-2">
+            How do I change my account email?
+          </div>
+          <div class="collapse-content"> 
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer  p-10 bg-gray-200 text-base-content">
+      <aside>
+        <img src="img/Asset 1 1.png" alt="">
+        <h2 class="text-black text-2xl font-bold">ZEDSMS</h2>
+        <div class="text-black">
+          <a href=""><i class="fa-brands fa-facebook-f px-1"></i></a>
+          <a href=""><i class="fa-brands fa-twitter px-1"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin px-1"></i></a>
+          <a href=""><i class="fa-brands fa-youtube px-1"></i></a>
+        </div>
+      </aside> 
+      <nav>
+        <header class="footer-title text-blue-700">Information</header> 
+        <a class="link link-hover text-black">Blog</a> 
+        <a class="link link-hover text-black">Tutorials</a> 
+        <a class="link link-hover text-black">Help Desk</a> 
+      </nav> 
+      <nav>
+        <header class="footer-title text-blue-700">Company</header> 
+        <a class="link link-hover text-black">About</a> 
+        <a class="link link-hover text-black">Contact</a> 
+        <a class="link link-hover text-black">Privacy & Policy</a> 
+        <a class="link link-hover text-black">Terms & condition</a>
+      </nav> 
+      <nav>
+        <header class="footer-title text-blue-700">Download App</header> 
+        <a class="link link-hover"><img src="img/App Store Black Borde.jpg" alt=""></a>
+        <a class="link link-hover"><img src="img/Google Play Black Borde.jpg" alt=""></a>  
+      </nav>
+    </footer>
+</body>
+</html>
