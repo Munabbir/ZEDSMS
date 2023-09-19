@@ -8,6 +8,9 @@
     <link rel="icon" href="img/Asset 1 1.png">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -21,12 +24,16 @@
         }
       </script>
 </head>
-<body class="bg-white">
-    <!-- header navbar -->
+<body class="bg-white font-Poppins">
+
+    <!----- header navbar ------>
+
     <header>
         <section class="container mx-auto">
             <nav class="bg-white px-4 py-3 shadow ">
+
                 <!-- Desktop Navbar -->
+
                 <div class="hidden md:flex justify-around items-center">
                     <a href="#" class="text-black text-2xl font-bold flex"><img src="img/Asset 1 1.png" alt=""><span> ZEDSMS</span></a>
                     <div class="space-x-4 flex items-center text-black">
@@ -36,7 +43,7 @@
                         <div class="space-x-4 px-6 flex justify-center items-center">
                             <button class=" border-solid border-2 hover:bg-indigo-600 hover:text-white border-indigo-600 py-3 px-5 rounded-md font-bold text-black font-500">sing in</button>
                         <button class="border-solid border-2 hover:bg-indigo-600 hover:text-white border-indigo-600 py-3 px-5 rounded-md font-bold text-black font-500">sing up</button>
-                        <img class="Ellipse36 w-6 h-6 rounded-full" src="img/Ellipse 36.svg" />
+                        <img class="Ellipse36 w-6 h-6 rounded-full" src="img/Ellipse 36.svg"/>
                         <div class=" hidden lg:flex">
                             <ul class="menu menu-horizontal px-1 ">
                               <li tabindex="0">
@@ -52,10 +59,11 @@
                           </div>
                         </div>
                     </div>
-                    
+
                 </div>
             
                 <!-- Mobile Navbar (Hamburger Menu) -->
+
                 <div class="md:hidden flex justify-between items-center">
                     <a href="#" class="text-black text-2xl font-bold flex"><img src="img/Asset 1 1.png" alt=""><span> ZEDSMS</span></a>
                     <button id="mobile-menu-button" class="text-white text-xl">
@@ -65,6 +73,7 @@
             </nav>
             
             <!-- Mobile Menu (Hidden by default) -->
+
             <div id="mobile-menu" class="hidden md:hidden  bg-blue-500 p-4">
                 <a href="#" class="block text-white my-2">Home</a>
                 <a href="#" class="block text-white my-2">About</a>
@@ -88,7 +97,9 @@
                           </div>
             </div>
             <script>
+
                 // Toggle mobile menu visibility
+
                 document.getElementById('mobile-menu-button').addEventListener('click', function () {
                     var mobileMenu = document.getElementById('mobile-menu');
                     mobileMenu.classList.toggle('hidden');
@@ -96,7 +107,9 @@
             </script>
             
         </section>
+
               <!-- Send & Receive Message Online  -->
+
               <section class="container mx-auto bg-white pb-20">
                 <div class="lg:flex justify-around items-center md:px-20 px-10">
                   <div class="space-y-7">
@@ -110,7 +123,9 @@
               </section>
     </header>
     <main>
+
       <!-- To Get A Number -->
+
       <section class="container mx-auto bg-white pb-20">
         <div>
           <div class="lg:hidden m-auto pb-6 pt-8 border-b-2 mb-8" style="max-width: 880px;">
@@ -284,13 +299,16 @@
           </div>
         </div>
       </section>
+
       <!-- Buy virtual sim easier than ever -->
+
       <section class="container mx-auto pb-30">
         <h1 class="text-center text-2xl md:text-4xl text-black">Buy virtual sim easier than ever</h1>
         
       </section>
 
       <!-- Why Choose Us? -->
+
       <section class="container mx-auto pt-32 pb-20">
           <div class="grid sm:grid-cols-2 gap-5 justify-center items-center px-7">
             <div class=" row-span-4">
@@ -322,22 +340,25 @@
               </div>
           </div>
       </section>
+
       <!-- Get a tour of ZEDSMS -->
 
-      <section class="container mx-auto pb-32 pt-20">
-       <div class="md:flex items-center justify-center bg-white md:px-20 px-10">
+      <section class="container mx-auto pb-32 pt-20 ">
+       <div class="md:flex items-center justify-around bg-white md:px-20 px-10">
         <div class="space-y-4 sm:px-0 px-5 text-black">
             <h1 class="text-2xl sm:text-5xl  uppercase font-bold">Get a tour of ZEDSMS</h1>
             <p class="sm:text-xl">Watch the tour you just how easy it is to get <br> your messaging started.</p>
-            <button class="uppercase border-2  px-7 py-5 font-bold flex items-center gap-3 rounded-lg">Watch demo<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+            <button class="uppercase border-2 hover:bg-gray-200 hover:border-blue-600  px-7 py-5 font-bold flex items-center gap-3 rounded-lg">Watch demo<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
         </div>
         <div class="sm:px-0 px-5">
-            <img class="w-1/2 md:w-full py-8 md:py-0" src="img/bro.png" alt="">
+            <img class=" py-8 md:py-0" src="img/bro.png" alt="">
         </div>
        </div>
 
     </section>
+
     <!-- We are available on -->
+
     <section class="container mx-auto flex justify-center items-center pb-20">
       <div class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-24 text-black">
         <div class="space-y-7">
@@ -382,7 +403,9 @@
         </div>
       </div>
     </section>
+
     <!-- Frequently asked questions -->
+
     <section class="container mx-auto pt-14 pb-24 flex justify-center items-center">
       <div class="text-black">
         <div class="space-y-3 text-center pb-32">
@@ -448,6 +471,7 @@
     </main>
 
     <!-- Footer -->
+
     <footer class="footer  p-10 bg-gray-200 text-base-content fixed-clms justify-around items-center">
       <aside>
         <img src="img/Asset 1 1.png" alt="">
